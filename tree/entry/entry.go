@@ -1,6 +1,9 @@
 package main
 
-import "Demo01/tree"
+import (
+	"Demo01/tree"
+	"fmt"
+)
 
 type MyTreeNode struct {
 	node *tree.Node
@@ -16,14 +19,20 @@ func (myNode *MyTreeNode) postOrder(){
 func main()  {
 	var root tree.Node
 
-	root = tree.Node{}
-	root.left = &treeNode{}
+	root = tree.Node{Value:3}
+	root.Left = &tree.Node{}
 	//root.left = &treeNode{4,nil,nil}
-	root.right = &treeNode{5,nil,nil}
-	root.right.left = new (treeNode)
-	root.left.right = createNode(2)
-	root.right.left.setValue(4)
+	root.Right = &tree.Node{5,nil,nil}
+	root.Right.Left = new (tree.Node)
+	root.Left.Right = tree.CreateNode(2)
+	root.Right.Left.SetValue(4)
 
-	root.traverse()
+	root.Traverse()
 
+	nodeCount :=0
+	root.TraverseFunc(func (node *tree.Node) {
+		nodeCount++
+	})
+
+	fmt.Println("Node count:",nodeCount)
 }

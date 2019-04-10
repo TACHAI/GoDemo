@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Demo01/functional/fib"
 	"bufio"
 	"fmt"
 	"io"
@@ -40,7 +41,7 @@ func printFileContents(reader io.Reader){
 }
 
 func main()  {
-	f:=fibonacci()
+	f:=fib.Fibonacci()
 
 
 	printFileContents(f)
