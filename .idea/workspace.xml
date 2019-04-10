@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a604e55-d71b-458e-9bf5-ffcfad9090cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/triangle_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhandling/defer/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhandling/defer/defer.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +14,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/web.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="352">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="e#14#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/triangle_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+              <folding>
+                <element signature="e#14#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +68,9 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>TreeNode</find>
@@ -92,12 +105,13 @@
         <option value="$PROJECT_DIR$/errhandling/defer/defer.go" />
         <option value="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go" />
         <option value="$PROJECT_DIR$/errhandling/filelistingserver/web.go" />
+        <option value="$PROJECT_DIR$/basic/triangle_test.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="817" />
-    <option name="y" value="297" />
+    <option name="x" value="1175" />
+    <option name="y" value="402" />
     <option name="width" value="1920" />
     <option name="height" value="1044" />
   </component>
@@ -115,33 +129,6 @@
               <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
               <item name="Demo01" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-              <item name="defer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-              <item name="filelistingserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -153,7 +140,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554888626750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554894019158" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -182,16 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build web.go">
-    <configuration name="go build adder.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Demo01" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/functional/adder/adder.go" />
-      <package value="Demo01" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestTriangle in Demo01/basic">
     <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Demo01" />
       <working_directory value="$PROJECT_DIR$" />
@@ -228,13 +206,24 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestTriangle in Demo01/basic" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Demo01" />
+      <working_directory value="$PROJECT_DIR$/basic" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Demo01/basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestTriangle$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestTriangle in Demo01/basic" />
         <item itemvalue="Go Build.go build web.go" />
         <item itemvalue="Go Build.go build defer.go" />
         <item itemvalue="Go Build.go build entry.go" />
         <item itemvalue="Go Build.go build fib.go" />
-        <item itemvalue="Go Build.go build adder.go" />
       </list>
     </recent_temporary>
   </component>
@@ -250,15 +239,20 @@
       <updated>1554727146975</updated>
       <workItem from="1554727148365" duration="785000" />
       <workItem from="1554794105801" duration="13848000" />
-      <workItem from="1554879268354" duration="7659000" />
+      <workItem from="1554879268354" duration="9270000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestTriangle_in_Demo01_basic - 2019.04.10 at 18h 41m 12s.xml">
+      <configuration name="TestTriangle in Demo01/basic" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22292000" />
+    <option name="totallyTimeSpent" value="23903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="817" y="297" width="1920" height="1044" extended-state="0" />
+    <frame x="1034" y="574" width="1920" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993007" weight="0.0990364" />
@@ -270,13 +264,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.040728834" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3762058" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3762058" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -414,10 +408,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/web.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="352">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="e#14#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/triangle_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="e#14#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
