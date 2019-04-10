@@ -3,7 +3,6 @@ package main
 import (
 	"Demo01/functional/fib"
 	"bufio"
-	"errors"
 	"fmt"
 	"os"
 )
@@ -23,7 +22,7 @@ func wreterFile(fileName string)  {
 	file,err :=os.OpenFile(fileName,os.O_EXCL|os.O_CREATE,0666)
 
 	// 通用处理文件打开错误
-	err = errors.New("this is a custom error")
+	//err = errors.New("this is a custom error")
 	if err != nil{
 		fmt.Println("file already exists")
 
