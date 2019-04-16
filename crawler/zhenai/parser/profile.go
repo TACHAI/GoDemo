@@ -3,32 +3,27 @@ package parser
 import (
 	"Demo01/crawler/engine"
 	"Demo01/crawler/model"
+	"bufio"
+	"github.com/PuerkitoBio/goquery"
+	"io"
 	"regexp"
 	"strconv"
 )
 
-const ageRe = `<td><span class="label">年龄：</span>([\d]+)岁</td>`
-const mirriageRe  = ``
+var ageRe = regexp.MustCompile(`<td><span class="label">年龄：</span>([\d]+)岁</td>`)
+var mirriageRe  = regexp.MustCompile(`<td><span class="label">婚况：</span>([^<]+)</td>`)
 
 func PareseProfile(contents []byte) engine.ParseResult {
 	profile :=model.Profile{}
 
-	re := regexp.MustCompile(ageRe)
-	match := re.FindSubmatch(contents)
+	age,err := strconv.Atoi(extractString(contents,ageRe))
 
+	if err!=nil{
+		profile.Age=age
+	}
 
-	if match != nil{
-		age,err := strconv.Atoi(string(match[1]))
-		if err != nil{
-			// user age is age
-			profile.Age=age
-		}
-	}
-	re = regexp.MustCompile(mirriageRe)
-	match = re.FindSubmatch(contents)
-	if match !=nil{
-		profile.Marriage = string(match[1])
-	}
+	profile.Marriage = extractString(contents,mirriageRe)
+
 
 	// todo  profile.name ...
 	result := engine.ParseResult{
@@ -46,3 +41,7 @@ func extractString(contents []byte,re *regexp.Regexp)  string{
 		return ""
 	}
 }
+
+//func exString(contents []byte)string{
+//	doc,err := goquery.NewDocumentFromReader(bufio.ScanRunes(contents,true))
+//}
