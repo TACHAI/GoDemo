@@ -9,11 +9,16 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"time"
 )
+
+
+var rateLimiter = time.Tick(100*time.Millisecond)
 
 func Fetch(url string) ([]byte, error)  {
 
 	// "http://www.zhenai.com/zhenghun"
+	<-rateLimiter
 	resp,err := http.Get(url)
 	if err!=nil{
 		return nil,err
